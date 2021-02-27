@@ -1,12 +1,16 @@
 /* ELEMENT */
-h1{
+h1, h2{
     text-align: center;
     color:#063C5E;
 }
 h3{
     color:#fccf14;
 }
-
+ul{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
 .button{
     background-color: #fccf14;
     text-align: center;
@@ -22,27 +26,19 @@ td,th{
 }
 table{
     border-collapse: collapse;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
 }
 tr:nth-child(odd){
     background-color: #C2C2C2;
 }
 form{
-    text-align: right; 
     width:50%;
     margin: 0 auto;
-}
-input [type=text]{
-    width:50%;
-    position:relative;
-    text-align: right;
-}
-label{
-    display:inline;
-    margin:auto; 
-    text-align: right;
-}
-textarea{
-    width:50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
 }
 
 /* BODY */
@@ -58,14 +54,18 @@ body {
 /* HEADER */
 .logo{
     background-color: #063C5E;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .logo img{
     max-width: 300px;
 }
 
 .topnav {
-    overflow: hidden;
     background-color: #063C5E;
+    display: flex;
+    align-items: center;
 }
 .topnav a {
     float: left;
@@ -94,6 +94,9 @@ body {
     padding: 40px;
     margin: 50px;
     background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     /* text-align: center; */
 }
 
@@ -103,6 +106,9 @@ body {
     color: #f2f2f2;
     border-top: 5px solid #fccf14;
     padding:10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 .footer a{
     color:#f2f2f2;
@@ -127,15 +133,38 @@ body {
     vertical-align: text-top;
 }
 
+/* INDEX PAGE */
+.index-all-books{ 
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.index-book{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    text-align: center;
+    width:200px;
+    padding:5px 20px;
+}
+
 /* COMIC CARD */
 .card{
-    padding:40px;
+    margin: 50px auto;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .title{
     font-size: large;
     color:#fccf14;
     font-weight: bold;
-    margin: 20px 150px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 10px 20px;
 }
 .card-top{
     background-color: #063C5E;
@@ -143,10 +172,16 @@ body {
     border: 5px solid #fccf14;
     text-align: center;
     padding:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .card-top img{
-    width:400px;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
     height: auto;
+    margin: 25px;
     border:2px solid #FFFFFF;
     border-radius: 40px;
 }
