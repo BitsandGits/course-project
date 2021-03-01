@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeSquad Comics</title>
     <link rel="stylesheet" type="text/css" href="./public/styles/styles.css">
+    <script src="https://kit.fontawesome.com/dbd1b7d520.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">  
 </head>
 
 <body>
@@ -23,14 +27,15 @@
         <div class="container">
             <h1>CREATE NEW COMIC</h1>
             <form>
+                <div>
                 <label for="title">Title: </label>
                 <input type="text" id="title" name="title" placeholder="Title">
-                <br>
-                <br>
+                </div>  
+                <div>
                 <label for="author">Author: </label>
                 <input type="text" id="author" name="author" placeholder="Author">
-                <br>
-                <br>
+                </div>
+                <div>
                 <label for="publisher">Publisher: </label>
                 <select name="publisher" id="publisher">
                     <option value="Select" selected disabled>Select</option>
@@ -44,24 +49,23 @@
                     <option value="Top Shelf Productions">Top Shelf Productions</option>
                     <option value="VIZ Media LLC">VIZ Media LLC</option>
                 </select>
-                <br>
-                <br>
+                </div>
+                <div>
                 <label for="genre">Genre: </label>
                 <input type="text" id="genre" name="genre" placeholder="Genre">
-                <br>
-                <br>
+                </div>
+                <div>
                 <label for="number of pages">Number of Pages: </label>
                 <input type="number" id="number of pages" name="number of pages" placeholder="100">
-                <br>
-                <br>
+                </div>
+                <div>
                 <label for="rating">Rating: </label>
                 <input type="number" id="rating" name="rating" placeholder="5">
-                <br>
-                <br>
+                </div>
+                <div>
                 <label for="synopsis">Synopsis: </label>
                 <textarea id="synopsis" name="synopsis" rows="4" placeholder="Synopsis"></textarea>
-                <br>
-                <br>
+                </div>
                 <br>
                 <input type="submit" value="Submit">
             </form>
@@ -81,14 +85,13 @@
         </div>
         <div class="cell">
             <h3>FOLLOW US</h3>
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Twitter</a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
         </div>
         <div class="cell">
             <h3>A PRODUCT OF</h3>
-            <a href="http://codesquad.org/" target="_blank" rel=”noopener noreferrer”> <img
-                    src="./public/images/CodeSquad-logo-b.png" alt="CodeSquad Comics Logo"></a>
+            <a href="http://codesquad.org/" target="_blank" rel=”noopener noreferrer”> <img src="./public/images/CodeSquad-logo-b.png" alt="CodeSquad Comics Logo"></a>
         </div>
     </div>
 </body>

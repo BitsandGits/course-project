@@ -1,10 +1,24 @@
+/* VARIABLES */
+:root{
+    --teal: #006B6B;
+    --light-teal: #009E9E;
+    --yellow: #FCCF14;
+    --blue: #063C5E;
+    --gray: #C2C2C2;
+    --grey: #C2C2C2;
+    --white: #FFFFFF;
+    --black:#000000;
+}
+
 /* ELEMENT */
 h1, h2{
     text-align: center;
-    color:#063C5E;
+    color:var(--blue);
+    font-family: 'Fredericka the Great', cursive;
 }
 h3{
-    color:#fccf14;
+    color:var(--yellow);
+    font-family: 'Fredericka the Great', cursive;
 }
 ul{
     display: flex;
@@ -12,48 +26,27 @@ ul{
     align-items: center;
 }
 .button{
-    background-color: #fccf14;
+    background-color: var(--yellow);
     text-align: center;
     width: fit-content;
     margin: auto;
     display: block;
 }
-td,th{
-    border:1px solid #063C5E;
-    height: 20px;
-    min-width:fit-content;
-    padding: 5px 10px;
-}
-table{
-    border-collapse: collapse;
-    margin: 40px;
-    display: flex;
-    justify-content: center;
-}
-tr:nth-child(odd){
-    background-color: #C2C2C2;
-}
-form{
-    width:50%;
-    margin: 0 auto;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-}
+
 
 /* BODY */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     width: 100%;
     max-width: 100vw;
     margin: 0;
     overflow-x: hidden;
-    background-image: linear-gradient(180deg,#FFFFFF,#006B6B);
+    background-image: linear-gradient(180deg,var(--white),var(--teal));
 }
 
 /* HEADER */
 .logo{
-    background-color: #063C5E;
+    background-color: var(--blue);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -62,26 +55,28 @@ body {
     max-width: 300px;
 }
 
-.topnav {
-    background-color: #063C5E;
+.topnav{
+    background-color: var(--blue);
     display: flex;
     align-items: center;
 }
-.topnav a {
+.topnav a{
     float: left;
-    color: #f2f2f2;
+    color: var(--white);
     text-align: center;
     padding: 10px 30px;
     text-decoration: none;
     font-size: 17px;
+    font-family: 'Fredericka the Great', cursive;
 }    
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: var(--white);
+    color: var(--black);
 }    
 .topnav a:active {
-    background-color: #fccf14;
-    color: white;
+    background-color: var(--yellow);
+    color: var(--blue);
+    font-weight: bold;
 }
 
 
@@ -90,42 +85,45 @@ body {
     width:200px;
 }
 .container{
-    border: 3px solid #063C5E;
+    border: 3px solid var(--blue);
     padding: 40px;
     margin: 50px;
-    background-color:white;
+    background-color:var(--white);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* text-align: center; */
 }
 
 /* FOOTER */
 .footer{
-    background-color: #063C5E;
-    color: #f2f2f2;
-    border-top: 5px solid #fccf14;
+    background-color:var(--blue);
+    color: var(--white);
+    border-top: 5px solid var(--yellow);
     padding:10px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 .footer a{
-    color:#f2f2f2;
+    color: var(--white);
     display:block;
     text-decoration: none;
+    font-family: 'Fredericka the Great', cursive;
 }
 .footer a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: var(--white);
+    color: var(--black);
 }    
 .footer a:active {
-    background-color:#fccf14;
-    color:#063C5E;
-    font:bold;
+    background-color: var(--yellow);
+    color: var(--blue);
+    font-weight: bold;
 }
 .footer img{
     width:150px;
+}
+.footer span{
+    font-family: 'Fredericka the Great', cursive;
 }
 .cell{
     display:inline-block;
@@ -159,7 +157,7 @@ body {
 }
 .title{
     font-size: large;
-    color:#fccf14;
+    color: var(--yellow);
     font-weight: bold;
     display: flex;
     flex-flow: row wrap;
@@ -167,9 +165,9 @@ body {
     margin: 10px 20px;
 }
 .card-top{
-    background-color: #063C5E;
+    background-color: var(--blue);
     border-radius: 40px 40px 0px 0px;
-    border: 5px solid #fccf14;
+    border: 5px solid var(--yellow);
     text-align: center;
     padding:20px;
     display: flex;
@@ -182,28 +180,72 @@ body {
     max-width: 100%;
     height: auto;
     margin: 25px;
-    border:2px solid #FFFFFF;
+    border:2px solid var(--white);
     border-radius: 40px;
 }
 .card-bottom{
-    background-color: #FFFFFF;
+    background-color: var(--white);
     border-radius: 0px 0px 40px 40px;
     padding: 40px;
-    border: 5px solid #fccf14;
+    border: 5px solid var(--yellow);
     border-top:0;
+}
+
+/* TABLE */ 
+td,th{
+    border:1px solid var(--blue);
+    height: 20px;
+    min-width:fit-content;
+    padding: 5px 10px;
+}
+table{
+    border-collapse: collapse;
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
+tr:nth-child(odd){
+    background-color: var(--gray);
+} 
+
+/* FORM */
+form{
+    width:70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+form div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width:100%;
+    align-items: stretch;
+}
+input, select, textarea{
+    margin: 10px;
+    flex-grow:1;
+    /* flex-basis: 100px;
+    flex-shrink: 0; */
+}
+label{
+    margin: 10px;
+    text-align: right;
+    flex-grow: 0;
+    width:150px;
 }
 
 /* BUTTONS ON PAGES */
 input[type=button], input[type=submit]{
-    background-color: #fccf14;
+    background-color: var(--yellow);
     text-align: center;
     width: fit-content;
     margin: auto;
     display: block;
 }
 input[value="EDIT"]{
-    background-color: #063C5E;
-    color:#FFFFFF;
+    background-color: var(--blue);
+    color: var(--white);
     text-align: center;
     width: fit-content;
     margin: auto;
