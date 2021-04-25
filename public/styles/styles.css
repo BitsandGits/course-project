@@ -80,6 +80,7 @@ body {
 }
 .logo i{
     display: none;
+    padding: 1.5rem 0;
 }
 
 /* CONTENT */
@@ -253,9 +254,13 @@ input[value="EDIT"]{
 }
 
 /* RESPONSIVE DESIGN */
+/* mobile */
 @media screen and (max-width: 768px) {
     .topnav{
         display: none;
+    }
+    .topnav.open {
+        display: block;
     }
     .logo i{
         display: flex;
@@ -288,6 +293,7 @@ input[value="EDIT"]{
         margin: 20px;
     }
 } 
+/* card display for large screen */
 @media screen and (min-width: 1024px){
     .card{
         display: flex;
