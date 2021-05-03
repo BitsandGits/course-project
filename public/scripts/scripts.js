@@ -69,6 +69,12 @@ const displayMore = function() {
         ratingSpan.appendChild(document.createTextNode(thisBook.rating));
         newDiv.appendChild(ratingSpan);
 
+        // details
+        let detailsLink = document.createElement("a");
+        detailsLink.setAttribute("href", "#");
+        detailsLink.appendChild(document.createTextNode("Details"));
+        newDiv.appendChild(detailsLink);
+
         // append
         document.getElementById("index-all-books").appendChild(newDiv);
     }
