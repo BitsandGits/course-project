@@ -1,32 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include("../partials/head") -%>
+<%- include("../partials/nav") -%>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeSquad Comics</title>
-    <link rel="stylesheet" type="text/css" href="./public/styles/styles.css">
-    <script src="https://kit.fontawesome.com/dbd1b7d520.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <script src="public/scripts/scripts.js" defer></script>   
-</head>
-
-<body>
-    <!-- HEADER -->
-    <div class="logo">
-        <a href="index.html"> <img src="./public/images/CodeSquad-Comics-logo.png" alt="CodeSquad Comics Logo"></a>
-        <div class="menu">
-            <i class="fa fa-bars" style="font-size: 1.5rem;"></i>
-        </div>
-        <div class="topnav">
-            <a href="./index.html">HOME</a>
-            <a href="./about.html">ABOUT</a>
-            <a href="./login.html">LOGIN</a>
-        </div>
-    </div>
     <!-- CONTENT -->
     <div class="content">
         <div class="container">
@@ -39,84 +13,84 @@
             <!-- START OF INDEX ALL BOOKS -->
             <div class="index-all-books" id="index-all-books">
                 <div class="index-book">
-                    <a href="#"> <img src="./public/images/batman.jpg" alt="Book Cover"></a>
+                    <a href="#"> <img src="/images/batman.jpg" alt="Book Cover"></a>
                     <span><i>Batman: The Dark Knight Returns</i></span>
                     <span>by Frank Miller</span>
                     <span>3 stars</span>
                     <a href="#">Details</a>
                 </div>
                 <div class="index-book">
-                    <a href="./black-panther.html"> <img src="./public/images/black-panther.jpg" alt="Book Cover"></a>
+                    <a href="/books/:id"> <img src="/images/black-panther.jpg" alt="Book Cover"></a>
                     <span><i>Black Panther: A Nation Under Our Feet Book 1</i></span>
                     <span>by Ta-Nehisi Coates</span>
                     <span>3 stars</span>
-                    <a href="./black-panther.html">Details</a>
+                    <a href="/books/:id">Details</a>
                 </div>
                 <div class="index-book">
-                    <a href="#"> <img src="./public/images/fun-home.jpg" alt="Book Cover"></a>
+                    <a href="#"> <img src="/images/fun-home.jpg" alt="Book Cover"></a>
                     <span><i>Fun Home: A Family Tragicomic</i></span>
                     <span>by Alison Bechdel</span>
                     <span>5 stars</span>
                     <a href="#">Details</a>
                 </div>
                 <div class="index-book">
-                    <a href="#"> <img src="./public/images/hunter-x-hunter.jpg" alt="Book Cover"></a>
+                    <a href="#"> <img src="/images/hunter-x-hunter.jpg" alt="Book Cover"></a>
                     <span><i>Hunter X Hunter Vol.1</i></span>
                     <span>by Yoshihiro Togashi</span>
                     <span>5 stars</span>
                     <a href="#">Details</a>
                 </div>
                 <div class="index-book">
-                    <a href="#"> <img src="./public/images/lumberjanes.jpg" alt="Book Cover"></a>
+                    <a href="#"> <img src="/images/lumberjanes.jpg" alt="Book Cover"></a>
                     <span><i>Lumberjanes Vol.1</i></span>
                     <span>by Noelle Steveson</span>
                     <span>4 stars</span>
                     <a href="#">Details</a>
                 </div>
                 <div class="index-book">
-                    <a href="#"> <img src="./public/images/march.jpg" alt="Book Cover"></a>
+                    <a href="#"> <img src="/images/march.jpg" alt="Book Cover"></a>
                     <span><i>March: Book One</i></span>
                     <span>by John Lewis</span>
                     <span>5 stars</span>
                     <a href="#">Details</a>
                 </div>
                 <div class="index-book">
-                    <a href="#"> <img src="./public/images/one-piece.jpg" alt="Book Cover"></a>
+                    <a href="#"> <img src="/images/one-piece.jpg" alt="Book Cover"></a>
                     <span><i>One Piece, Vol.1: Romance Dawn</i></span>
                     <span>by Eiichiro Oda</span>
                     <span>5 stars</span>
                     <a href="#">Details</a>
                 </div>
                 <div class="index-book">
-                    <a href="#"> <img src="./public/images/parable-of-the-sower.jpg" alt="Book Cover"></a>
+                    <a href="#"> <img src="/images/parable-of-the-sower.jpg" alt="Book Cover"></a>
                     <span><i>Parable of the Sower</i></span>
                     <span>by Octavia E. Butler</span>
                     <span>4 stars</span>
                     <a href="#">Details</a>
                 </div>
                 <div class="index-book">
-                    <a href="#"> <img src="./public/images/queer.jpg" alt="Book Cover"></a>
+                    <a href="#"> <img src="/images/queer.jpg" alt="Book Cover"></a>
                     <span><i>Queer: A Graphic History</i></span>
                     <span>by Meg-John Barker</span>
                     <span>4 stars</span>
                     <a href="#">Details</a>
                 </div>
                 <div class="index-book">
-                    <a href="#"> <img src="./public/images/the-walking-dead.jpg" alt="Book Cover"></a>
+                    <a href="#"> <img src="/images/the-walking-dead.jpg" alt="Book Cover"></a>
                     <span><i>The Walking Dead, Vol.1: Days Gone Bye</i></span>
                     <span>by Robert Kirkman</span>
                     <span>4 stars</span>
                     <a href="#">Details</a>
                 </div>
                 <div class="index-book">
-                    <a href="#"> <img src="./public/images/wake.jpg" alt="Book Cover"></a>
+                    <a href="#"> <img src="/images/wake.jpg" alt="Book Cover"></a>
                     <span><i>Wake: The Hidden History of Women-led Slave Revolts</i></span>
                     <span>by Rebecca Hall</span>
                     <span>4 stars</span>
                     <a href="#">Details</a>
                 </div>
                 <div class="index-book">
-                    <a href="#"> <img src="./public/images/watchmen.jpg" alt="Book Cover"></a>
+                    <a href="#"> <img src="/images/watchmen.jpg" alt="Book Cover"></a>
                     <span><i>Watchmen</i></span>
                     <span>by Alan Moore</span>
                     <span>5 stars</span>
@@ -129,29 +103,5 @@
         </div>
         <br>
     </div>
-    <!-- FOOTER -->
-    <div class="footer">
-        <div class="cell">
-            <h3>VISIT US</h3>
-            <span>CodeSquad Comics<br>123 Dorchester Avenue<br>Boston, MA 02124</span>
-        </div>
-        <div class="cell">
-            <h3>LINKS</h3>
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./login.html">Login</a>
-        </div>
-        <div class="cell">
-            <h3>FOLLOW US</h3>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
-        <div class="cell">
-            <h3>A PRODUCT OF</h3>
-            <a href="http://codesquad.org/" target="_blank" rel=”noopener noreferrer”> <img src="./public/images/CodeSquad-logo-b.png" alt="CodeSquad Comics Logo"></a>
-        </div>
-    </div>
-</body>
 
-</html>
+<%- include("../partials/footer") -%>
