@@ -12,90 +12,11 @@
             <h1>COMPLETE COMIC COLLECTION</h1>
             <!-- START OF INDEX ALL BOOKS -->
             <div class="index-all-books" id="index-all-books">
-                <div class="index-book">
-                    <a href="#"> <img src="/images/batman.jpg" alt="Book Cover"></a>
-                    <span><i>Batman: The Dark Knight Returns</i></span>
-                    <span>by Frank Miller</span>
-                    <span>3 stars</span>
-                    <a href="#">Details</a>
-                </div>
-                <div class="index-book">
-                    <a href="/books/:id"> <img src="/images/black-panther.jpg" alt="Book Cover"></a>
-                    <span><i>Black Panther: A Nation Under Our Feet Book 1</i></span>
-                    <span>by Ta-Nehisi Coates</span>
-                    <span>3 stars</span>
-                    <a href="/books/:id">Details</a>
-                </div>
-                <div class="index-book">
-                    <a href="#"> <img src="/images/fun-home.jpg" alt="Book Cover"></a>
-                    <span><i>Fun Home: A Family Tragicomic</i></span>
-                    <span>by Alison Bechdel</span>
-                    <span>5 stars</span>
-                    <a href="#">Details</a>
-                </div>
-                <div class="index-book">
-                    <a href="#"> <img src="/images/hunter-x-hunter.jpg" alt="Book Cover"></a>
-                    <span><i>Hunter X Hunter Vol.1</i></span>
-                    <span>by Yoshihiro Togashi</span>
-                    <span>5 stars</span>
-                    <a href="#">Details</a>
-                </div>
-                <div class="index-book">
-                    <a href="#"> <img src="/images/lumberjanes.jpg" alt="Book Cover"></a>
-                    <span><i>Lumberjanes Vol.1</i></span>
-                    <span>by Noelle Steveson</span>
-                    <span>4 stars</span>
-                    <a href="#">Details</a>
-                </div>
-                <div class="index-book">
-                    <a href="#"> <img src="/images/march.jpg" alt="Book Cover"></a>
-                    <span><i>March: Book One</i></span>
-                    <span>by John Lewis</span>
-                    <span>5 stars</span>
-                    <a href="#">Details</a>
-                </div>
-                <div class="index-book">
-                    <a href="#"> <img src="/images/one-piece.jpg" alt="Book Cover"></a>
-                    <span><i>One Piece, Vol.1: Romance Dawn</i></span>
-                    <span>by Eiichiro Oda</span>
-                    <span>5 stars</span>
-                    <a href="#">Details</a>
-                </div>
-                <div class="index-book">
-                    <a href="#"> <img src="/images/parable-of-the-sower.jpg" alt="Book Cover"></a>
-                    <span><i>Parable of the Sower</i></span>
-                    <span>by Octavia E. Butler</span>
-                    <span>4 stars</span>
-                    <a href="#">Details</a>
-                </div>
-                <div class="index-book">
-                    <a href="#"> <img src="/images/queer.jpg" alt="Book Cover"></a>
-                    <span><i>Queer: A Graphic History</i></span>
-                    <span>by Meg-John Barker</span>
-                    <span>4 stars</span>
-                    <a href="#">Details</a>
-                </div>
-                <div class="index-book">
-                    <a href="#"> <img src="/images/the-walking-dead.jpg" alt="Book Cover"></a>
-                    <span><i>The Walking Dead, Vol.1: Days Gone Bye</i></span>
-                    <span>by Robert Kirkman</span>
-                    <span>4 stars</span>
-                    <a href="#">Details</a>
-                </div>
-                <div class="index-book">
-                    <a href="#"> <img src="/images/wake.jpg" alt="Book Cover"></a>
-                    <span><i>Wake: The Hidden History of Women-led Slave Revolts</i></span>
-                    <span>by Rebecca Hall</span>
-                    <span>4 stars</span>
-                    <a href="#">Details</a>
-                </div>
-                <div class="index-book">
-                    <a href="#"> <img src="/images/watchmen.jpg" alt="Book Cover"></a>
-                    <span><i>Watchmen</i></span>
-                    <span>by Alan Moore</span>
-                    <span>5 stars</span>
-                    <a href="#">Details</a>
-                </div>
+                <!-- for loop for the length of array -->
+                <% allBooks.forEach(book => { %>
+                    <%- include("../partials/single-book", {book:book}) -%>
+                <% }); %>
+                <!-- book is the individual object inside comics inside data.js -->
             </div>
             <!-- END OF INDEX ALL BOOKS -->
             <br>

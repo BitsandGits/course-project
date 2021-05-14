@@ -4,16 +4,16 @@
     <!-- CONTENT -->
     <div class="card">
         <div class="card-top">
-            <p class="title">BLACK PANTHER: A NATION UNDER OUR FEET BOOK 1</p>
-            <img src="/images/black-panther.jpg" alt="Black Panther Cover" />
+            <p class="title"><%= thisBook.title %></p>
+            <img src="/images/<%= thisBook.image %>" alt="Book Cover" />
         </div>
         <div class="card-bottom">
-            <p><span style="color: #063C5E;font-weight: bold;text-decoration: underline;">Title:</span> <span style="font-style: italic;"> Black Panther: A Nation Under Our Feet Book 1</span></p>
-            <p><span style="color: #063C5E;font-weight: bold;text-decoration: underline;">Author:</span> Ta-Nehisi Coates</p>
-            <p><span style="color: #063C5E;font-weight: bold;text-decoration: underline;">Publisher:</span> Marvel</p>
-            <p><span style="color: #063C5E;font-weight: bold;text-decoration: underline;">Genre:</span> superhero</p>
-            <p><span style="color: #063C5E;font-weight: bold;text-decoration: underline;">Rating:</span> 3</p>
-            <p><span style="color: #063C5E;font-weight: bold;text-decoration: underline;">Synopsis:</span> A new era begins for the Black Panther! MacArthur Genius and National Book Award-winning writer Ta-Nehisi Coates (Between the World and Me) takes the helm, confronting T'Challa with a dramatic upheaval in Wakanda that will make leading the African nation tougher than ever before. When a superhuman terrorist group that calls itself The People sparks a violent uprising, the land famed for its incredible technology and proud warrior traditions will be thrown into turmoil. If Wakanda is to survive, it must adapt--but can its monarch, one in a long line of Black Panthers, survive the necessary change? Heavy lies the head that wears the cowl!</p>
+            <p><span style="color: #063C5E;font-weight: bold;text-decoration: underline;">Title:</span> <span style="font-style: italic;"> <%= thisBook.title %></span></p>
+            <p><span style="color: #063C5E;font-weight: bold;text-decoration: underline;">Author:</span> <%= thisBook.author %></p>
+            <p><span style="color: #063C5E;font-weight: bold;text-decoration: underline;">Publisher:</span> <%= thisBook.publisher %></p>
+            <p><span style="color: #063C5E;font-weight: bold;text-decoration: underline;">Genre:</span> <%= thisBook.genre %></p>
+            <p><span style="color: #063C5E;font-weight: bold;text-decoration: underline;">Rating:</span> <%= thisBook.rating %></p>
+            <p><span style="color: #063C5E;font-weight: bold;text-decoration: underline;">Synopsis:</span> <%= thisBook.synopsis %></p>
         </div>
     </div>
 
