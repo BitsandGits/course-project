@@ -4,6 +4,7 @@ const data = require("../starter-files/data");
 
 module.exports = {
     index: (request, response) => {
+        // console.log(request);
         response.render("pages/index", {allBooks: data}); // passed data into index
     },
     about: (request, response) => {

@@ -4,6 +4,9 @@ const morgan = require("morgan");
 const app = express();
 const PORT = 3000;
 const methodOverride = require("method-override");
+// need this to parse data + collect info 
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 // adding path module and EJS to app.js
 const path = require("path");

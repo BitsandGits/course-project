@@ -1,5 +1,10 @@
 <tr>
     <td><%= book.title %></td>
-    <td><input type="button" value="EDIT"></td>
-    <td><input type="button" value="DELETE"></td>
+    <td><a href="/admin-console/update-book/<%= book._id %>"><button>EDIT</button></a></td> 
+    <!-- href clears out url, start from beginning -->
+    <td>
+        <form action="/books/<%= book._id %>?_method=DELETE" method="POST">
+        <button type="submit">DELETE</button>
+        </form>  
+    </td>
 </tr>

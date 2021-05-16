@@ -8,7 +8,7 @@ const bookRoutes = require("./book-routes");
 const siteRoutes = require("./site-routes");
 
 // routes: router.use instead of router.route 
-// splitting where the routing is going 
+// use = splitting where the routing is going bc there is no get/post/etc actions 
 router.use("/", siteRoutes);
 router.use("/books", bookRoutes); 
 router.use("/admin-console", adminRoutes); 

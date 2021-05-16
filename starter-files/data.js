@@ -1,6 +1,6 @@
 const { v4:uuid } = require('uuid'); 
 
-const comics = [{  
+module.exports = [{  
     "_id" : uuid(),
     "title": "Fun Home: A Family Tragicomic",
     "author": "Alison Bechdel",
@@ -122,4 +122,4 @@ const comics = [{
     "image": "parable-of-the-sower.jpg"
   }]
 
-  module.exports = comics;
+  // module.exports = comics;

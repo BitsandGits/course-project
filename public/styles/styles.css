@@ -11,6 +11,9 @@
 }
 
 /* ELEMENT */
+a{
+    text-decoration:none;
+}
 h1, h2{
     text-align: center;
     color:var(--blue);
@@ -32,7 +35,13 @@ ul{
     margin: auto;
     display: block;
 }
-
+button{
+    background-color: var(--yellow);
+    text-align: center;
+    width:fit-content;
+    margin: 0px 5px;
+    align-self: center;
+}
 
 /* BODY */
 body {
