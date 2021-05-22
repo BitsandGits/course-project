@@ -1,10 +1,15 @@
-// require data
-const { request, response } = require("express");
-const data = require("../starter-files/data");
+const Comic = require("../models/comic-model");
 
 module.exports = {
     admin: (request, response) => {
-        response.render("pages/admin", {allBooks: data}); // pass data to admin.ejs
+        // use find() method 
+        Comic.find({},(error, books) => {
+            if(error){
+                return error;
+            } else {
+                response.render("pages/admin", {allBooks: books}); // pass allBooks to admin.ejs
+            }
+        }).sort({title:1})
     },
     create: (request, response) => {
         response.render("pages/create");
@@ -13,9 +18,14 @@ module.exports = {
     update: (request, response) => {
         // find id and save
         const bookID = request.params.id; 
-        // locate book by id
-        const foundBook = data.find(book => book._id === String(bookID)); 
-        // pull up the original info via found id 
-        response.render("pages/update", {thisBook:foundBook});
+        // use findOne() method 
+        Comic.findOne({_id: bookID}, (error, foundComic) => {
+            if(error) {
+                return error;
+            } else {
+                // pull up the original info via found id 
+                response.render("pages/update", {thisBook:foundComic});
+            }
+        })
     }
 }; 

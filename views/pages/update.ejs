@@ -8,11 +8,11 @@
             <form action="/books/<%= thisBook._id %>?_method=PUT" method="POST">
                 <div>
                 <label for="title">Title: </label>
-                <input type="text" id="title" name="title" value="<%= thisBook.title %>">
+                <input type="text" id="title" name="title" value="<%= thisBook.title %>" required minlength="1">
                 </div>
                 <div>
                 <label for="author">Author: </label>
-                <input type="text" id="author" name="author" value="<%= thisBook.author %>">
+                <input type="text" id="author" name="author" value="<%= thisBook.author %>" required minlength="1">
                 </div>
                 <div>
                 <label for="publisher">Publisher: </label>
@@ -37,11 +37,11 @@
                 </div>
                 <div>
                 <label for="pages">Number of Pages: </label>
-                <input type="number" id="pages" name="pages" value="<%= thisBook.pages %>">
+                <input type="number" id="pages" name="pages" value="<%= thisBook.pages %>"  min="1">
                 </div>
                 <div>
                 <label for="rating">Rating: </label>
-                <input type="number" id="rating" name="rating" value="<%= thisBook.rating %>">
+                <input type="number" id="rating" name="rating" value="<%= thisBook.rating %>" required min="1" max="5">
                 </div>
                 <div>
                 <label for="synopsis">Synopsis: </label>
