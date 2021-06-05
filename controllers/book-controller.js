@@ -24,7 +24,7 @@ module.exports = {
             rating: request.body.rating,
             synopsis: request.body.synopsis,
             image: request.body.image
-        }) 
+        }); 
         newComic.save();
         response.redirect("/admin-console"); // redirect cleans url path so "..." is direct path 
     },
